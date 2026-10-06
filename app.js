@@ -7,12 +7,12 @@ let tasks = [];
 function addTask(title) { tasks.push({ title, done: false }); }
 
 // === ZONA COMPARTIDA (lineas 10-15) ===
-// pendiente 1
-// pendiente 2
-// pendiente 3
-// pendiente 4
-// pendiente 5
-// pendiente 6
+// --- AUTH ---
+function login(user, pass) {
+  return user === 'admin' && pass === '1234';
+}
+function logout() { console.log('logout'); }
+// --- FIN AUTH ---
 // === FIN ZONA COMPARTIDA ===
 
 function listTasks() { return tasks; }
